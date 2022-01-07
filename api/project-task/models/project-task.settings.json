@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_tasks",
+  "info": {
+    "name": "ProjectTask"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "model": "project",
+      "via": "project_tasks"
+    },
+    "code_task": {
+      "model": "code-task"
+    },
+    "planTime": {
+      "type": "integer"
+    },
+    "excutionTime": {
+      "type": "integer"
+    },
+    "code_progress": {
+      "model": "code-progress"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

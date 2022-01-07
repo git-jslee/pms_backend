@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/code-progresses",
+      "handler": "code-progress.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/code-progresses/count",
+      "handler": "code-progress.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/code-progresses/:id",
+      "handler": "code-progress.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/code-progresses",
+      "handler": "code-progress.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/code-progresses/:id",
+      "handler": "code-progress.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/code-progresses/:id",
+      "handler": "code-progress.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

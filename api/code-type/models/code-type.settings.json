@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "code_types",
+  "info": {
+    "name": "code_type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sort": {
+      "type": "integer",
+      "max": 999,
+      "min": 0
+    }
+  }
+}

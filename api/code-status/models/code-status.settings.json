@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "code_statuses",
+  "info": {
+    "name": "code_status"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sort": {
+      "type": "integer",
+      "max": 999,
+      "min": 0
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "model": "customer"
+    },
+    "code_type": {
+      "model": "code-type"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "code_service": {
+      "model": "code-service"
+    },
+    "code_status": {
+      "model": "code-status"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false,
+      "pluginOptions": {}
+    },
+    "planStartDate": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "planEndDate": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "startDate": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "endDate": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "price": {
+      "type": "integer",
+      "pluginOptions": {}
+    },
+    "remark": {
+      "type": "text",
+      "pluginOptions": {}
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "project_tasks": {
+      "via": "project",
+      "collection": "project-task"
+    }
+  }
+}

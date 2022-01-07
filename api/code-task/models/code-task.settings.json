@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "code_tasks",
+  "info": {
+    "name": "code_task"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code_service": {
+      "model": "code-service",
+      "via": "code_tasks"
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "integer",
+      "max": 999,
+      "min": 0
+    },
+    "used": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

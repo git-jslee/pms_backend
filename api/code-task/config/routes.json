@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/code-tasks",
+      "handler": "code-task.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/code-tasks/count",
+      "handler": "code-task.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/code-tasks/:id",
+      "handler": "code-task.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/code-tasks",
+      "handler": "code-task.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/code-tasks/:id",
+      "handler": "code-task.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/code-tasks/:id",
+      "handler": "code-task.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

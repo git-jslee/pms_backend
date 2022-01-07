@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testtables",
+  "info": {
+    "name": "testtable",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "date"
+    },
+    "used": {
+      "type": "boolean"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "testtables"
+    }
+  }
+}

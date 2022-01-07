@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works",
+  "info": {
+    "name": "work",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "model": "project"
+    },
+    "workingDay": {
+      "type": "date",
+      "required": true
+    },
+    "workingTime": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 20
+    },
+    "code_progress": {
+      "model": "code-progress"
+    },
+    "user_info": {
+      "model": "user-info"
+    },
+    "description": {
+      "type": "text"
+    },
+    "customer": {
+      "model": "customer"
+    },
+    "project_task": {
+      "model": "project-task"
+    }
+  }
+}

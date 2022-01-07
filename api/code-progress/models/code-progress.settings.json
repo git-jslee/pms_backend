@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "code_progresses",
+  "info": {
+    "name": "code_progress"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "integer",
+      "required": true,
+      "max": 100,
+      "min": 0
+    },
+    "sort": {
+      "type": "integer",
+      "max": 999,
+      "min": 0
+    }
+  }
+}
