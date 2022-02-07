@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "user_infos",
+  "collectionName": "scode_divisions",
   "info": {
-    "name": "UserInfo"
+    "name": "scode_division"
   },
   "options": {
     "increments": true,
@@ -12,12 +12,13 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "users_permissions_user": {
-      "via": "user_info",
-      "plugin": "users-permissions",
-      "model": "user"
+    "sort": {
+      "type": "integer",
+      "max": 999,
+      "min": 100
     }
   }
 }

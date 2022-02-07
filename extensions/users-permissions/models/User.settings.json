@@ -59,13 +59,13 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "testtables": {
-      "via": "users_permissions_user",
-      "collection": "testtable"
-    },
     "user_info": {
       "via": "users_permissions_user",
       "model": "user-info"
+    },
+    "worker": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scode-teams",
+      "handler": "scode-team.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scode-teams/count",
+      "handler": "scode-team.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scode-teams/:id",
+      "handler": "scode-team.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scode-teams",
+      "handler": "scode-team.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scode-teams/:id",
+      "handler": "scode-team.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scode-teams/:id",
+      "handler": "scode-team.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

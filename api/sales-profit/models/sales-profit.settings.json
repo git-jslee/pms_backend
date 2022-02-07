@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales_profits",
+  "info": {
+    "name": "salesProfit",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sales_performance": {
+      "via": "sales_profits",
+      "model": "sales-performance"
+    },
+    "type": {
+      "type": "string"
+    },
+    "sales": {
+      "type": "integer",
+      "required": true
+    },
+    "sales_profit": {
+      "type": "integer",
+      "required": true
+    },
+    "profit_margin": {
+      "type": "integer",
+      "max": 100,
+      "min": 0,
+      "required": true
+    },
+    "sales_rec_date": {
+      "type": "date",
+      "required": true
+    },
+    "payment_date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "scode_probability": {
+      "model": "scode-probability"
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sales-profits",
+      "handler": "sales-profit.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sales-profits/count",
+      "handler": "sales-profit.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sales-profits/:id",
+      "handler": "sales-profit.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sales-profits",
+      "handler": "sales-profit.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sales-profits/:id",
+      "handler": "sales-profit.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sales-profits/:id",
+      "handler": "sales-profit.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

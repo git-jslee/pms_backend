@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sales-codebooks",
+      "handler": "sales-codebook.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sales-codebooks/count",
+      "handler": "sales-codebook.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sales-codebooks/:id",
+      "handler": "sales-codebook.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sales-codebooks",
+      "handler": "sales-codebook.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sales-codebooks/:id",
+      "handler": "sales-codebook.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sales-codebooks/:id",
+      "handler": "sales-codebook.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

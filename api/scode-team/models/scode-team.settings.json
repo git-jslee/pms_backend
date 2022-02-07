@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "user_infos",
+  "collectionName": "scode_teams",
   "info": {
-    "name": "UserInfo"
+    "name": "scode_team"
   },
   "options": {
     "increments": true,
@@ -12,12 +12,14 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "users_permissions_user": {
-      "via": "user_info",
-      "plugin": "users-permissions",
-      "model": "user"
+    "sort": {
+      "type": "integer",
+      "required": false,
+      "max": 999,
+      "min": 100
     }
   }
 }

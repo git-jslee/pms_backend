@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scode-items",
+      "handler": "scode-item.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scode-items/count",
+      "handler": "scode-item.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scode-items/:id",
+      "handler": "scode-item.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scode-items",
+      "handler": "scode-item.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scode-items/:id",
+      "handler": "scode-item.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scode-items/:id",
+      "handler": "scode-item.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

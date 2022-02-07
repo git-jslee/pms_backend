@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scode-probabilities",
+      "handler": "scode-probability.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scode-probabilities/count",
+      "handler": "scode-probability.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scode-probabilities/:id",
+      "handler": "scode-probability.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scode-probabilities",
+      "handler": "scode-probability.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scode-probabilities/:id",
+      "handler": "scode-probability.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scode-probabilities/:id",
+      "handler": "scode-probability.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

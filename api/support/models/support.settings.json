@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "user_infos",
+  "collectionName": "supports",
   "info": {
-    "name": "UserInfo"
+    "name": "support"
   },
   "options": {
     "increments": true,
@@ -14,10 +14,8 @@
     "name": {
       "type": "string"
     },
-    "users_permissions_user": {
-      "via": "user_info",
-      "plugin": "users-permissions",
-      "model": "user"
+    "eng_name": {
+      "type": "string"
     }
   }
 }

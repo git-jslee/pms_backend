@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scode-divisions",
+      "handler": "scode-division.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scode-divisions/count",
+      "handler": "scode-division.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scode-divisions/:id",
+      "handler": "scode-division.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scode-divisions",
+      "handler": "scode-division.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scode-divisions/:id",
+      "handler": "scode-division.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scode-divisions/:id",
+      "handler": "scode-division.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales_codebooks",
+  "info": {
+    "name": "sales_codebook"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "upper": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "integer",
+      "max": 999,
+      "min": 100
+    }
+  }
+}

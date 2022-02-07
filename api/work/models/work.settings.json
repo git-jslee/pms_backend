@@ -39,6 +39,10 @@
     },
     "project_task": {
       "model": "project-task"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

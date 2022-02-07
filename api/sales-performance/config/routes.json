@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/testtables",
-      "handler": "testtable.find",
+      "path": "/sales-performances",
+      "handler": "sales-performance.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/testtables/count",
-      "handler": "testtable.count",
+      "path": "/sales-performances/count",
+      "handler": "sales-performance.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/testtables/:id",
-      "handler": "testtable.findOne",
+      "path": "/sales-performances/:id",
+      "handler": "sales-performance.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/testtables",
-      "handler": "testtable.create",
+      "path": "/sales-performances",
+      "handler": "sales-performance.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/testtables/:id",
-      "handler": "testtable.update",
+      "path": "/sales-performances/:id",
+      "handler": "sales-performance.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/testtables/:id",
-      "handler": "testtable.delete",
+      "path": "/sales-performances/:id",
+      "handler": "sales-performance.delete",
       "config": {
         "policies": []
       }

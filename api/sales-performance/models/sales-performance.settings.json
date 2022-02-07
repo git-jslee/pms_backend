@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales_performances",
+  "info": {
+    "name": "salesPerformance",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "model": "customer"
+    },
+    "support": {
+      "model": "support"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "scode_division": {
+      "model": "scode-division"
+    },
+    "scode_item": {
+      "model": "scode-item"
+    },
+    "scode_team": {
+      "model": "scode-team"
+    },
+    "description": {
+      "type": "text"
+    },
+    "sales_profits": {
+      "via": "sales_performance",
+      "collection": "sales-profit"
+    },
+    "sales_rec_date": {
+      "type": "date"
+    },
+    "count": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 99
+    }
+  }
+}
