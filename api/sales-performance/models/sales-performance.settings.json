@@ -46,6 +46,17 @@
       "default": 0,
       "min": 0,
       "max": 99
+    },
+    "scode_probability": {
+      "model": "scode-probability"
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "deleted": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

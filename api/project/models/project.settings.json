@@ -65,6 +65,9 @@
     "project_tasks": {
       "via": "project",
       "collection": "project-task"
+    },
+    "lastUpdate": {
+      "type": "date"
     }
   }
 }

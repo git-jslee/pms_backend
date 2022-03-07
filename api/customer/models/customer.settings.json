@@ -27,6 +27,12 @@
     },
     "remark": {
       "type": "text"
+    },
+    "businessNumber": {
+      "type": "integer"
+    },
+    "businessType": {
+      "type": "string"
     }
   }
 }

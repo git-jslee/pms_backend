@@ -12,8 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "project": {
-      "model": "project",
-      "via": "project_tasks"
+      "via": "project_tasks",
+      "model": "project"
     },
     "code_task": {
       "model": "code-task"
